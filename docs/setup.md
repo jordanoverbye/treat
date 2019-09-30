@@ -123,3 +123,15 @@ import(`../themes/${themeName}.treat`).then(theme => {
 ```
 
 If you're using the [React API](react-api), you'll want to provide the theme to your [`TreatProvider`](react-api#treatprovider).
+
+## Usage with Next
+
+To use `treat` in a `next` project, install `next-treat` with npm or yarn and add it to your `next.config.js` file like this:
+
+```
+const withTreat = require('next-treat')
+
+const config = { ... }
+
+module.exports = withTreat(config)
+```
